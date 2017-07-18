@@ -35,16 +35,16 @@ public class UserDb {
             Class.forName("com.mysql.jdbc.Driver");
             Connection conn=DriverManager.getConnection(url,user,password);
             Statement stmt=conn.createStatement();
-            stmt.executeQuery(sql);
+            stmt.executeUpdate(sql);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
-    public static void main(String args []){
-        Register("aaaaaa","111111");
+    public static void main(String args[]){
+        if (connect("yang","1997")){
+            System.out.println("成功");
+        }
     }
-
-
 }
