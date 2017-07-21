@@ -25,13 +25,11 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
         String account=request.getParameter("account");
         String password=request.getParameter("password");
         if (UserDb.connect(account,password)){
-            response.setStatus(200);
-            out.print("登录成功");
-            System.out.println("登录成功");
+            out.write("登录成功");
+            System.out.print("登录成功");
         } else {
-            response.setStatus(100);
-            System.out.println("登录失败");
-            out.print("登录失败");
+            out.write("登录失败");
+            System.out.print("登录失败");
         }
         out.flush();
         out.close();

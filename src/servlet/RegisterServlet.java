@@ -28,13 +28,11 @@ public class RegisterServlet extends HttpServlet {
         String password=request.getParameter("password");
         if (UserDb.connect(account,password)==false){
             UserDb.Register(account,password);
-            response.setStatus(200);
-            out.print("1");
-            System.out.println("插入成功");
+            out.print("注册成功");
+            System.out.println("注册成功");
         }else {
-            response.setStatus(100);
-            out.print("2");
-            System.out.println("插入失败");
+            out.print("注册失败");
+            System.out.println("注册失败");
         }
     }
 }
