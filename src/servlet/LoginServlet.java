@@ -26,12 +26,12 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
         String password=request.getParameter("password");
         if (UserDb.connect(account,password)){
             response.setStatus(200);
-            out.print("1");
+            out.print("登录成功");
             System.out.println("登录成功");
         } else {
             response.setStatus(100);
-            out.print("2");
             System.out.println("登录失败");
+            out.print("登录失败");
         }
         out.flush();
         out.close();

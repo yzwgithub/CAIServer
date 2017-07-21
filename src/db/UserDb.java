@@ -42,9 +42,4 @@ public class UserDb {
             e.printStackTrace();
         }
     }
-    public static void main(String args[]){
-        if (connect("yang","1997")){
-            System.out.println("成功");
-        }
-    }
 }
