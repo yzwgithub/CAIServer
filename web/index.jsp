@@ -12,7 +12,7 @@
   </head>
   <body>
 <div align="center">
-  <form action="/servlet/LoginServlet">
+  <form action="servlet/Test" method="post">
     用户名：<input type="text" name="account"><br>
     密  码：<input type="text" name="password"><br>
     <input type="submit" value="提交">

@@ -31,8 +31,8 @@ public class RegisterServlet extends HttpServlet {
             out.print("注册成功");
             System.out.println("注册成功");
         }else {
-            out.print("注册失败");
-            System.out.println("注册失败");
+            out.print("用户名已存在！");
+            System.out.println("注册失败！");
         }
     }
 }
