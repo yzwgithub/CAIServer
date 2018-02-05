@@ -29,10 +29,9 @@ public class RegisterServlet extends HttpServlet {
         if (UserDb.connect(account,password)==false){
             UserDb.Register(account,password);
             out.print("注册成功");
-            System.out.println("注册成功");
+            System.out.println("用户"+account+"注册成功");
         }else {
             out.print("用户名已存在！");
-            System.out.println("注册失败！");
         }
     }
 }
