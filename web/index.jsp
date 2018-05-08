@@ -12,11 +12,14 @@
   </head>
   <body>
 <div align="center">
-  <form action="servlet/Test" method="post">
+  <form action="/jsp/jsp01.jsp" method="get">
     用户名：<input type="text" name="account"><br>
     密  码：<input type="text" name="password"><br>
     <input type="submit" value="提交">
   </form>
 </div>
+  <% int a=1;
+  System.out.println(a);
+  %>
   </body>
 </html>

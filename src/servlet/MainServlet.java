@@ -31,14 +31,14 @@ public class MainServlet extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
         response.setContentType("application/json; charset=utf-8");
         PrintWriter out=response.getWriter();
-        String sql="select src,discribe from main";
+        String sql="select * from main";
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection conn= DriverManager.getConnection(sql_url, user, password);
             Statement stmt=conn.createStatement();
             ResultSet rs=stmt.executeQuery(sql);
             while (rs.next()){
-                image.add(Constant.str1+imgUrl+rs.getString("src")+Constant.str2+rs.getString("discribe")+Constant.str3);
+                image.add(Constant.str1+imgUrl+rs.getString("src")+Constant.str2+rs.getString("discribe")+Constant.str4+imgUrl+rs.getString("name")+Constant.str3);
             }
             out.write(image.toString());
             System.out.println(image.toString());

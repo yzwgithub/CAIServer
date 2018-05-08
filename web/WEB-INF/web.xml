@@ -27,4 +27,30 @@
         <servlet-name>MainServlet</servlet-name>
         <url-pattern>/servlet/MainServlet</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>CustomerServlet</servlet-name>
+        <servlet-class>servlet.CustomerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CustomerServlet</servlet-name>
+        <url-pattern>/servlet/CustomerServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CommitServlet</servlet-name>
+        <servlet-class>servlet.CommitServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CommitServlet</servlet-name>
+        <url-pattern>/servlet/CommitServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ResetPasswordServlet</servlet-name>
+        <servlet-class>servlet.ResetPasswordServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResetPasswordServlet</servlet-name>
+        <url-pattern>/servlet/ResetPasswordServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
